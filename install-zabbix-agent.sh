@@ -4,3 +4,4 @@ yum install zabbix-agent -y
 yum update -y
 firewall-cmd --zone=public --add-port=10050/tcp --permanent
 firewall-cmd --reload
+systemctl enable zabbix-agent
